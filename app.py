@@ -159,12 +159,282 @@
 
 
 
-#Project: Weight Converter
-weight = int(input('Weight: '))
-unit = input('(L)bs or (K)g: ')
-if unit.upper() == "L":
-    converted = weight * 0.45
-    print(f'You are {converted} kilos.')
-else:
-    converted = weight / 0.45
-    print(f"You are {converted} pounds.")
+# #Project: Weight Converter
+# weight = int(input('Weight: '))
+# unit = input('(L)bs or (K)g: ')
+# if unit.upper() == "L":
+#     converted = weight * 0.45
+#     print(f'You are {converted} kilos.')
+# else:
+#     converted = weight / 0.45
+#     print(f"You are {converted} pounds.")
+
+
+
+# #While Loops
+# i = 1
+# while i <= 5:
+#     print('*' * i)
+#     i = i + 1
+# print("Done")
+
+
+
+# #Guessing Game
+# secret_number = 9
+# guess_count = 0
+# guess_limit = 3
+# while guess_count < guess_limit:
+#     guess = int(input('Guess number: '))
+#     guess_count += 1
+#     if guess == secret_number:
+#         print('You won!')
+#         break
+# else:
+#     print('Sorry, you failed!')
+
+
+
+# #Car Game
+# command = ""
+# started = False
+#
+# while True:        #DRY = Don't repeat yourself.
+#     command = input("> ").lower()
+#     if command == "start":
+#         if started:
+#             print("Car is already started!")
+#         else:
+#             started = True
+#             print("Car started...")
+#     elif command == "stop":
+#         if not started:
+#             print("Car is already stopped!")
+#         else:
+#             started = False
+#             print("Car stopped.")
+#     elif command == "help":
+#         print("""
+# start - to start the car
+# stop - to stop the car
+# quit - to quit
+#         """)
+#     elif command == "quit":
+#         break
+#     else:
+#         print("Sorry, I don't understand that.")
+
+
+
+# For Loops
+# for item in 'Python':
+# for item in ["Mosh", "John", "Sarah"]:
+# for item in range(5, 10, 2):
+#     print(item)
+
+
+
+# prices = [10, 20, 30]
+# total = 0
+#
+# for price in prices:
+#     total += price
+# print(f"Total: {total}")
+
+
+
+# # Nested Loops
+# for x in range(4):
+#     for y in range(3):
+#         print(F'({x}, {y})')
+
+
+
+# numbers = [5, 2, 5, 2, 2]
+#
+# # for num in numbers:
+# #         print("*" * num)
+#
+# for x_count in numbers:
+#     output=''
+#     for count in range(x_count):
+#         output += 'x'
+#     print(output)
+
+
+
+# # Lists
+# names = ['John', 'Bob', 'Mosh', 'Sarah', 'Mary']
+# names[0] = 'Jon'
+# print(names[1:-1:2])
+# print(names)
+
+
+
+# nums = [3, 6, 2, 8, 4, 10, 3]
+# max = nums[0]
+#
+# for num in nums:
+#     if num > max:
+#         max = num
+# print(max)
+
+
+
+# # 2D Lists
+# matrix = [
+#     [1, 2, 3],
+#     [4, 5, 6],
+#     [7, 8, 9]
+# ]
+#
+# # matrix[0][1] = 20
+# # print(matrix[0][1])
+#
+# for row in matrix:
+#     print(row)
+#     # for item in row:
+#     #     print(item)
+
+
+
+# # List Methods(List Functions)
+# nums = [5, 2, 1, 2, 4]
+# nums.append(20)
+# nums.insert(1, 10)
+# nums.remove(2)
+# # nums.clear()
+# print(nums)
+# nums.pop()
+# print(nums)
+# print(nums.index(2))
+# print(50 in nums)
+# nums.insert(1, 2)
+# nums.insert(1, 2)
+# print(nums)
+# print(nums.count(2))
+# nums.reverse()
+# print(nums)
+# print(nums.sort())
+# print(nums)
+#
+# print('*' * 10)
+# nums2 = nums.copy()
+# nums.append(10)
+# print(nums)
+# print(nums2)
+
+
+
+# nums = [2, 2, 4, 6, 3, 4, 6, 2, 1]
+# uniques = []
+#
+# for num in nums:
+#     if num not in uniques:
+#         uniques.append(num)
+# print(uniques)
+
+
+
+# # Tuples
+# # Tuples are immutable.
+# nums = (1, 2, 3)
+# # nums[0] = 10
+# print(nums[0])
+
+
+
+# # Unpacking
+# coordinates = (1, 2, 3)
+#
+# # print(coordinates[0] * coordinates[1] * coordinates[2])
+# #
+# # x = coordinates[0]
+# # y = coordinates[1]
+# # z = coordinates[2]
+# # print(x * y * z)
+#
+# x, y, z = coordinates
+# print(y)
+
+
+
+# # Dictionaries
+# # Name: John Smith
+# # Email: john@gmail.com
+# # Phone: 1234
+# customer = {        #key value pair can't be duplicated.
+#     "name": "John Smith",
+#     "age": 30,
+#     "is_verifies": True
+# }
+# print(customer["name"])
+# print(customer.get("birthdate"))
+# print(customer.get("birthdate", "Jan 1 1980"))
+# print(customer.get("name", "Jan 1 1980"))
+#
+# customer["name"] = "Cary Brilliant"
+# print(customer["name"])
+#
+# customer["birthdate"] = "1990-08-01"
+# print(customer["birthdate"])
+
+
+
+# phone = input("Phone: ")
+# digits_mapping = {
+#     "1": "One",
+#     "2": "Two",
+#     "3": "Three",
+#     "4": "Four"
+# }
+#
+# output = ""
+# for character in phone:
+#     output += digits_mapping.get(character, "!") + " "
+# print(output)
+
+
+
+# # Emoji Converter :)
+# message = input("> ")
+# words = message.split(' ')
+# emojis = {
+#     ":)": "😋",
+#     ":(": "😢"
+# }
+#
+# output = ""
+# for word in words:
+#     output += emojis.get(word, word) + " "
+# print(output)
+
+
+
+# # Functions
+# def greet_user():
+#     print('Hi there!')
+#     print('Welcome aboard')
+#
+#
+# print("Start")
+# greet_user()
+# print("Finish")
+
+
+
+# # Parameters
+# def greet_user(first_name, last_name):       #parameters and arguments
+#     print(f'Hi {first_name} {last_name}!')
+#     print('Welcome aboard')
+#
+#
+# print("Start")
+# greet_user('John', 'Smith')
+# greet_user('Mary', 'Japsen')
+# print("Finish")
+
+
+
+#Keyword Arguments
+
