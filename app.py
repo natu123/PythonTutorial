@@ -436,5 +436,111 @@
 
 
 
-#Keyword Arguments
+# #Keyword Arguments
+# def greet_user(first_name, last_name):       #parameters and arguments
+#     print(f'Hi {first_name} {last_name}!')
+#     print('Welcome aboard')
+#
+#
+# print("Start")
+# ###     greet_user(last_name='Smith', first_name='John')    ###
+# greet_user('Mary', 'Japsen')
+# print("Finish")
+#
+# numerical values => Use keyword arguments
+# calc_cost(total=50, shipping=5, discount=0.1)
+
+
+
+# # Return Statement
+# def square(number):
+#     return number * number
+#
+#
+# print(square(3))
+
+
+
+# # Creating a Reusable Function
+# def emoji_converter(message):
+#     words = message.split(' ')
+#     emojis = {
+#         ":)": "😋",
+#         ":(": "😢"
+#     }
+#
+#     output = ""
+#     for word in words:
+#         output += emojis.get(word, word) + " "
+#
+#     return output
+#
+#
+# message = input("> ")
+# print(emoji_converter(message))
+
+
+
+# # Exceptions
+# try:
+#     age = int(input('Age: '))
+#     print(age)
+#     income = 20000
+#     risk = income / age
+# except ValueError:
+#     print('Invalid value')
+# except ZeroDivisionError:
+#     print('Age cannot be 0.')
+
+
+
+# Comments
+# Whys and Hows, not whats
+
+
+
+### Classes ###
+# Numbers
+# Strings
+# Booleans
+# ---
+# Lists
+# Dictinaries
+#
+# class Point:     #Pascal naming convention
+#     def move(self):
+#         print("move")
+#     def draw(self):
+#         print("draw")
+#
+#
+# # Class, Instance, Object, attribute: method / property
+# point1 = Point()
+# point1.x = 10
+# point1.y = 20
+# print(point1.x)
+# point1.draw()
+#
+# point2 = Point()
+# point2.x = 1
+# print(point2.x)
+
+
+
+### Constructors ###
+class Point:
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y
+
+    def move(self):
+        print("move")
+
+    def draw(self):
+        print("draw")
+
+
+point = Point(10, 20)
+point.x = 11
+print(point.x)
 
